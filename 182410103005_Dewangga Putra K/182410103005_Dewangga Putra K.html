@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		form{
-			margin-left: 10%;
-			text-align: left;
-		}
-		.kotak {
-			height: 400px;
-			width: 300px;
-			background-color: grey;
-			margin: 0 auto;
-			text-align: center;
-		}
-		.insert{
-			width: 230px;
-		}
-	</style>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .ulir {
+        margin-left: 10%;
+        text-align: left;
+    }
+    
+    .kotak {
+        height: 280px;
+        width: 300px;
+        background-color: grey;
+        float: left;
+        text-align: center;
+        border: 20px solid white;
+        background-image: url("background-form.jpg");
+        background-size: 300px 500px;
+        background-repeat: no-repeat;
+    }
+    
+    .insert {
+        width: 230px;
+    }
+    
+    .login {
+        height: 210px;
+        width: 300px;
+        background-color: grey;
+        float: left;
+        text-align: center;
+        border: 20px solid white;
+        background-image: url("background--login.png")
+    }
+    
+    label {
+        text-align: left;
+    }
+</style>
+
 <head>
     <title>182410103005_DEWANGGA PUTRA KUSWANTO</title>
 </head>
+
 <body>
-</form>
-<div class="kotak">
-	<p><h1>Form Creative</h1></p>
-	<form action="">
-		<input class="insert" type="text" placeholder="Nama">
-		<br><br>
-		<input class="insert" type="number" placeholder="NIM">
-		<br><br>
-		<input class="insert" type="password" placeholder="Password">
-		<br><br>
-		<input type="radio" name="gender">Laki-Laki
-		<br>
-		<input type="radio" name="gender">Perempuan
-		<br><br>
-		<input type="checkbox">Saya Menyetujui Persyaratan
-		<br><br>
-		<button type="button">SUBMIT</button>	
-	</form>
-</div>
-	
+    </form>
+    <div class="kotak">
+        <p>
+            <h1>Form Creative</h1>
+        </p>
+        <form class="ulir" action="">
+            <input class="insert" type="text" placeholder="Nama">
+            <br><br>
+            <input class="insert" type="number" placeholder="NIM">
+            <br><br>
+            <input class="insert" type="password" placeholder="Password">
+            <br><br>
+            <input type="radio" name="gender">Laki-Laki
+            <br>
+            <input type="radio" name="gender">Perempuan
+            <br><br>
+            <input type="checkbox">Saya Menyetujui Persyaratan
+            <br><br>
+            <button type="submit" style="width: 230px; height: 10%;">SUBMIT</button>
+        </form>
+    </div>
+    <div class="login">
+        <p>
+            <h1>Login</h1>
+        </p>
+        <form action="" class="ulir">
+            <label><b>Username </b></label><br>
+            <input class="insert" type="text" placeholder="Enter Username" name="uname" required> <br>
+            <label><b>Password </b></label><br>
+            <input class="insert" type="password" placeholder="Enter Password" name="psw" required><br><br>
+            <input type="checkbox">Remember me
+            <br><br>
+            <button type="submit" style="width: 230px; height: 10%;">Login</button><br><br>
+        </form>
+    </div>
+
 </body>
+
 </html>

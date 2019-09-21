@@ -3,36 +3,60 @@
   <head>
     <span class="logo_icon"><img src="https://unej.ac.id/wp-content/uploads/2018/01/unejacid-1.png"></span>
     <meta charset="utf-8">
-    <title>Tugas Praktikum</title>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 <div class="login-box">
-  <center><h1>Login Form</h1></center>
+  <center><h1>SIGN IN</h1></center>
   <div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="text" placeholder="Nama">
-  </div>
+  <i class="fas fa-user"></i>
+  <input type="text" placeholder="Nama">
+</div>
 
-  <div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="number" placeholder="NIM">
-  </div>
+<div class="textbox">
+  <i class="fas fa-user"></i>
+  <input type="number" placeholder="NIM">
+</div>
 
-  <div class="textbox">
-    <i class="fas fa-lock"></i>
-    <input type="password" placeholder="Password">
-  </div>
+<div class="textbox">
+  <i class="fas fa-lock"></i>
+  <input type="password" placeholder="Password">
+</div>
   <p>Jenis Kelamin:</p>  
-  <div class="checkbox">
-    <input type="radio" name="gender" value="Laki-laki"><label>Laki-laki</label>
-    <input type="radio" name="gender" value="Perempuan"><label>Perempuan</label>
-  <form>
-    <br><input type="checkbox"><label>Saya telah menyetujui persyaratan yang ada</label>
-  <br></form>
+<div class="checkbox">
+  <input type="radio" name="gender" value="Laki-laki"><label>Laki-laki</label>
+  <input type="radio" name="gender" value="Perempuan"><label>Perempuan</label>
+<form>
+  <br><input type="checkbox"><label>Ingat Saya</label>
+<br></form>
 <br></div>
   <input type="button" class="btnlogin" value="Submit">
+
+    <div class="loginform">
+      <center><h1>SIGN UP</h1></center>
+      <div class="textisi">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Nama">
+    </div>
+    <div class="textisi">
+      <i class="fas fa-envelope"></i>
+      <input type="text" placeholder="Email">
+    </div>
+    <div class="textisi">
+      <i class="fas fa-lock"></i>
+      <input type="text" placeholder="Password">
+    </div>
+    <div class="textisi">
+      <i class="fas fa-lock"></i>
+      <input type="text" placeholder="Confirm Password">
+    </div>
+    <br><input type="checkbox"><label>Saya Telah Menyetujui Persyaratan Yang Ada!</label>
+    <br><br><input type="button" class="btnmasuk" value="Submit">
+</body>
+
   <style type="text/css">
-    @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 body{
   margin: 0;
   padding: 0;
@@ -47,11 +71,12 @@ body{
 .login-box{
   position: absolute;
   top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  transform: translate(10%, -50%);
   background: rgba(0, 0, 0, 0.50);
-  padding: 20px;
-  width: 270;
+  padding: 10px;
+  width: 350px;
+  height: 400px;
   box-shadow: 0 0 5px 5px white;
 }
 
@@ -92,7 +117,50 @@ body{
   cursor: pointer;
   transition: 0.3s
  }
-  </style>
-</div>
-  </body>
+
+ .loginform{
+  position: absolute;
+  top:50%;
+  left: 10%;
+  transform: translate(120%, -50%);
+  background: rgba(0, 0, 0, 0.50);
+  padding: 10px;
+  width: 350px;
+  height: 400px;
+  box-shadow: 0 0 5px 5px white;
+ }
+ .textisi{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding: 8px 0;
+ }
+ .textisi i{
+  color: white;
+ }
+ .textisi input{
+  width: 100%;
+ padding: 0 10px;
+ background: none;
+ border: none;
+ outline: none;
+ color: white;
+ font-size: 18px;
+ }
+ .textisi input::placeholder{
+  color: white;
+ }
+ .btnmasuk{
+  width: 100%;
+  background: none;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s
+ }
+</style>
 </html>

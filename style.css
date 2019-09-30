@@ -245,20 +245,22 @@ li h4 {
 
 .testimoni {
     margin: 0 auto;
-    width: 34.5%;
     text-align: center;
+    width: 605px;
 }
 .kotaktestimoni {
     border: 1px solid #2680EB;
     margin: 0 auto;
     float: left;
-    width: 325px;
+    width: 300px;
+    height: 130px;
 }
 
 .kotaktestimoni img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    float: left;
 }
 
 

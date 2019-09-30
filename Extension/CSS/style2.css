@@ -1,0 +1,31 @@
+.login{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    border: 1px solid grey;
+    width: 45%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.login h2{
+    color: #C4C4C4;
+}
+.login form input{
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    width: 80%;
+    height: 50px;
+}
+.login hr{
+    width: 80%;
+}
+.login form input[type="submit"]{
+    background-color: #2680EB;
+    color: white;
+}
+.login p a{
+    text-decoration: none;
+    color: #2680EB;
+    font-size: 16px;
+}

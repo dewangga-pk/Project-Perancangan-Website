@@ -498,9 +498,6 @@ footer ul li a:hover {
         font-size: 16px;
         text-decoration: none;
     }
-    footer{
-        display: flex;
-    }
     footer ul li img {
         display: block;
         float: left;

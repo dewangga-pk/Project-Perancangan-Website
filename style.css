@@ -160,6 +160,7 @@ li h4 {
 .kotakjumbo form input {
     width: 80%;
     height: 50px;
+    border : 1px solid #2680EB;
     border-radius: 9px;
     text-align: center;
     font-size: 22px;

@@ -29,3 +29,40 @@
     color: #2680EB;
     font-size: 16px;
 }
+.SignUp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    width: 25%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.SignUp form input{
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    text-align: left;
+}
+.SignUp form input[type="radio"]{
+    width: 5%;
+}
+.SignUp form input[type="button"]{
+    width: 20%;
+    border-radius: 5px;
+    background-color: #2680EB;
+    color: white;
+    text-align: center;
+    float: right;
+}
+#SignUp2{
+    width: 20%;
+    border-radius: 5px;
+    background-color: #2680EB;
+    color: white;
+    text-align: center;
+    float: left;
+}
+#pengecekan{
+    width: 5%;
+    padding: 0;
+    margin: 0;
+}

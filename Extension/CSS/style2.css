@@ -66,3 +66,22 @@
     padding: 0;
     margin: 0;
 }
+#NamaKolom{
+    background: #56A0F8;
+    color: white;
+}
+.HargaDomain{
+    margin: 0 auto;
+    width: 50%;
+}
+.HargaDomain span{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

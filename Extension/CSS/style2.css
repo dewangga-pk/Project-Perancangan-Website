@@ -85,3 +85,52 @@
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.metodpembayaran{
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.metodpembayaran hr{
+    background-color: #707070;
+}
+.atm{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+.atm span hr{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #707070;
+}
+.atm span{
+    margin-top: 10px;
+    width: 40%;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.atm span img{
+    padding: 20px;
+    width: 30%;
+    height: 50px;
+}
+.FAQ{
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+.FAQ div{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.FAQ div span{
+    width: 40%;
+}

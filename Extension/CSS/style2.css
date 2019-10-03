@@ -172,15 +172,20 @@
     float: right;
 }
 .promo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 7%;
     text-align: center;
     margin: 0 auto;
     width: 50%;
 }
+.promo h1,h2{
+    color: #707070;
+}
 .promo table{
     margin: 0 auto;
 }
 .promo table td{
+    color: #707070;
     text-align: left;
 }
 .pesanes{

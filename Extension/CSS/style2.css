@@ -171,3 +171,24 @@
     text-align: center;
     float: right;
 }
+.promo{
+    padding: 7%;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+.promo table{
+    margin: 0 auto;
+}
+.promo table td{
+    text-align: left;
+}
+.pesanes{
+    min-width: 18%;
+    height: 40px;
+    width: 10%;
+    background-color: #2680EB;
+    border-radius: 9px;
+    color: white;
+    font-size: 20px;
+}

@@ -222,7 +222,7 @@ li h4 {
     padding: 10px;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
@@ -233,7 +233,7 @@ li h4 {
     padding: 10px;
     width: 83%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
@@ -450,10 +450,9 @@ footer ul li a:hover {
     .kotakjumbo{
         height: 80%;
     }
-
 }
 
-@media screen and (max-width:1022px){
+@media screen and (max-width:1024px){
 
     .kotakjumbo{
         border-radius: 10px;
@@ -461,15 +460,9 @@ footer ul li a:hover {
         height: auto;
         font-size: 12px;
     }
+
 }
 @media screen and (max-width:747px) {
-    .navbar {
-        display: none;
-    }
-    .menu {
-        /* 082132743622 */
-        display: block;
-    }
     .kotakkecil{
         background-color: white;
         text-align: center;
@@ -481,7 +474,8 @@ footer ul li a:hover {
         display: none;
     }
     .jumbotron{
-        height: 50%;
+        padding-top : 5%;
+        height: 70%;
     }
     .kotakjumbo {
         min-width: 300px;
@@ -517,6 +511,9 @@ footer ul li a:hover {
         border-radius: 5px;
         font-size: 20px;
     }
+    .smallsquad,.smallsquad2{
+        justify-content: center;
+    }
     footer {
         width: 100%;
         height: auto;
@@ -526,14 +523,19 @@ footer ul li a:hover {
     }
     .testimoni {
         margin: 0 auto;
-        width: 65%;
+        width: 80%;
         text-align: center;
     }
     .kotaktestimoni {
         border: 1px solid #2680EB;
         margin: 0 auto;
         float: left;
-        width: 325px;
+        width: 100%;
+    }
+    .box{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
     }
     
     .kotaktestimoni img {
@@ -576,8 +578,44 @@ footer ul li a:hover {
 
     
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:750px){
+    .jumbotron{
+        padding-top: 15%;
+        height: 40%;
+    }
+    .navbar{
+        display: none;
+
+    }
+    .menu {
+        display: block;
+    }
+    .smallsquad,.smallsquad2{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media screen and (max-width:380px){
+    .jumbotron{
+        /* padding-top : 15%; */
+        height: 40%;
+    }
+    .container,.container h2{
+        width: 100%;
+        /* font-size: 13    px; */
+    }
+    .testimoni {
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+    .box{
+        width: 100%;
+    }
     .kotaktestimoni{
         width: 100%;
+        height: 110%;
     }
 }

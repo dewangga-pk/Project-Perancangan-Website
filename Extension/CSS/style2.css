@@ -197,3 +197,12 @@
     color: white;
     font-size: 20px;
 }
+
+.promo section,.informasi{
+    text-align: left;
+    padding: 10px;
+    font-size: 19px;
+}
+.gambarkontak{
+    float: right;
+}

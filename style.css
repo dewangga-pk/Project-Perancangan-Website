@@ -576,3 +576,8 @@ footer ul li a:hover {
 
     
 }
+@media screen and (max-width:360px){
+    .kotaktestimoni{
+        width: 100%;
+    }
+}

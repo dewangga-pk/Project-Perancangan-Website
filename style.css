@@ -156,6 +156,11 @@ li h4 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
 }
+#searchpromo img{
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
 
 .kotakjumbo form input {
     width: 80%;
@@ -176,12 +181,21 @@ li h4 {
     color: white;
     font-size: 20px;
 }
-
+.kotakjumbo table td{
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.kotakjumbo table tr:last-child{
+    text-align: center;
+    border-bottom: none;
+}
+tr td a{
+    color: white;
+    text-decoration: none;
+}
 .harga {
-    margin-top: 10px;
-    float: right;
-    vertical-align: middle;
-    font-size: 30px;
+    font-size: 22px;
+    text-align: right;
 }
 
 .tengah {
@@ -494,6 +508,7 @@ footer ul li a:hover {
     }
     .kotakjumbo img{
         width: 100px;
+        float: left;
     }
     
     .kotakjumbo form button {
@@ -642,5 +657,17 @@ footer ul li a:hover {
     .kotaktestimoni{
         width: 100%;
         height: 110%;
+    }
+}
+@media screen and (max-height:736px){
+    .jumbotron{
+        padding-top: 20%;
+        height: 100%;
+    }
+    .kotakjumbo{
+        height: auto;
+    }
+    #searchpromo img{
+        width: 10%;
     }
 }

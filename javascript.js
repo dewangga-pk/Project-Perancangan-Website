@@ -8,7 +8,7 @@ function closeNav() {
 function navClick() {
   var x = document.getElementById("SideNav");
   if (x.className == "Sidenavbar") {
-    x.className += " responsive";
+    x.className += " open";
     displayNav();
   } else {
     x.className = "Sidenavbar";
@@ -19,6 +19,9 @@ function navClick() {
 let a1 = document.querySelectorAll(".jumbotron,.container,.testimoni,footer");
 for (let i =0 ,len = a1.length;i<len;i++){
   a1[i].addEventListener('click',function(){
+    closeNav();
+  });
+  a1[i].addEventListener('scroll',function(){
     closeNav();
   });
 };

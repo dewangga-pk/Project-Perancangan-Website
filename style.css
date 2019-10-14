@@ -458,10 +458,9 @@ footer ul li a:hover {
 }
 /* SideBAr */
 .Sidenavbar{
-    position: fixed;
+    /* position: fixed; */
     height: 0;
     width: 100%;
-    background-color: rgba(13,13,13, 0.9);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -477,7 +476,7 @@ footer ul li a:hover {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: #2680EB;
     transition: 1s;
 }
 .Sidenavbar .closebtn {
@@ -645,7 +644,7 @@ footer ul li a:hover {
 }
 @media screen and (max-width:380px){
     .jumbotron{
-        height: 80%;
+        height: 40%;
     }
     .container,.container h2{
         width: 100%;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/style2.css">
     <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,19 +40,19 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="menu">
+                    <div class="menu" onclick="navClick()">
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
-                    </div>
-                </nav>
-                <!-- <div id="SideNav" class="">
-                    <a href="#">Domain</a>
-                    <a href="#">Hosting</a>
-                    <a href="#">Sign In</a>
-                    <a href="#">Sign Up</a>
-                </div> -->
-         </header>
+                </div>
+            </nav>
+            <div id="SideNav" class="Sidenavbar">
+                <a href="../index.html">Domain</a>
+                <a href="Hosting.html">Hosting</a>
+                <a href="SignIn.html">Sign In</a>
+                <a href="SignUp.html">Sign Up</a>
+            </div>
+        </header>
          <div class="domain">
             <h3 class="juduldomain">Promo</h3>
             <p class="juduldomain">Jangan Lewatkan Penawara Terbaik Dari Kami</p>
@@ -67,7 +66,7 @@
             <table>
                 <tr>
                     <td><img src="Gambar/discount.png" alt=""></td>
-                    <td>
+                    <td id="syaratdanketentuan">
                         Syarat dan Ketentuan :
                         <ul>
                             <li>Diskon 20% berlaku untuk Hosting apapun</li>
@@ -80,6 +79,16 @@
                     </td>
                 </tr>
             </table>
+            <span id="syaratdanketentuan2">
+                <ul>
+                    <li>Diskon 20% berlaku untuk Hosting apapun</li>
+                    <li>Diskon berlaku untuk registrasi dan perpanjangan</li>
+                    <li>Batas pelunasan & konfirmasi sampai 30 September 2019</li>
+                    <li>Kode Promo : PAKETHEMAT</li>
+                    <li>Gratis domain untuk Hosting Super ke atas minimal 1 tahun</li>
+                    <li>DomaiNesia berhak membatalkan promo dari order yang ada</li>
+                </ul>
+            </span>
             <button class="pesanes">PESAN</button>
          </div>
          <section class="FAQ">
@@ -131,5 +140,6 @@
                    <li><img src="Gambar/instagram.png" alt=""><a href="https://www.instagram.com/?hl=id">Instagram</a></li>
                </ul>
         </footer> 
+        <script src="../javascript.js"></script>
 </body>
 </html>

@@ -716,6 +716,15 @@ footer ul li a:hover {
 .konfirmresponsiv{
     display: none;
 }
+#syaratdanketentuan2{
+    display: none;
+    margin: 0 auto;
+    color: grey;
+}
+#syaratdanketentuan2 ul li{
+    list-style-type: none;
+    text-align: left;
+}
 
 /* Responsiv */
 /* MenuSaatKecil */
@@ -772,6 +781,15 @@ footer ul li a:hover {
         width: 50%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .promo{
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .promo img{
+        float: inherit;
+    }
 }
 
 @media screen and (max-width:908px){
@@ -783,6 +801,9 @@ footer ul li a:hover {
     }
     .HargaDomain{
         width: 70%;
+    }
+    .promo{
+        width: 90%;
     }
 }
 @media screen and (max-width:750px){
@@ -1006,6 +1027,29 @@ footer ul li a:hover {
         color: white;
         text-align: center;
         float: left;
+    }
+    .promo{
+        padding-left: 0;
+        width: 100%;
+    }
+    .promo table tr td img{
+        width: 90%;
+    }
+    #syaratdanketentuan{
+        display: none;
+    }
+    #syaratdanketentuan2{
+        display: block;
+    }
+    .pesanes{
+        width: 40%;
+    }
+    .promo img{
+        width: 70%;
+    }
+    .domain.termofservice{
+        padding-top: 1%;
+        height: 22%;
     }
 }
 @media screen and (max-width:380px){

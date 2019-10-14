@@ -644,7 +644,7 @@ footer ul li a:hover {
 }
 @media screen and (max-width:380px){
     .jumbotron{
-        height: 50%;
+        height: 80%;
     }
     .container,.container h2{
         width: 100%;

@@ -713,7 +713,9 @@ footer ul li a:hover {
 .gambarkontak{
     float: right;
 }
-
+.konfirmresponsiv{
+    display: none;
+}
 
 /* Responsiv */
 /* MenuSaatKecil */
@@ -754,6 +756,21 @@ footer ul li a:hover {
         color: white;
         text-align: center;
         float: left;
+    }
+    .metodpembayaran .atm img{
+        width: 60%;
+    }
+    .atm span{
+        padding: 10px;
+        word-wrap: break-word;
+    }
+    #Kirim{
+        width: 40%;
+    }
+    .konfirm{
+        margin: 0 auto;
+        width: 50%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
 
@@ -950,6 +967,46 @@ footer ul li a:hover {
     .domain.respons{
         height: 30%;
     }
+    .metodpembayaran{
+        width: 100%;
+    }
+    .FAQ{
+        word-wrap: break-word;
+    }
+    .konfirm{
+        display: none;
+    }
+    .konfirmresponsiv{
+        display: block;
+        padding: 5%;
+        margin: 0 auto;
+        width: 80%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .konfirmresponsiv label{
+        font-size: 18px;
+    }
+    .konfirmresponsiv form{
+        margin: 0 auto;
+        width: 75%;
+    }
+    .konfirmresponsiv form input{
+        border-radius: 5px;
+        width: 80%;
+        padding: 15px;
+    }
+    .konfirmresponsiv form select{
+        padding: 15px;
+        border-radius: 5px;
+    }
+    #Kirim2{
+        width: 40%;
+        border-radius: 5px;
+        background-color: #2680EB;
+        color: white;
+        text-align: center;
+        float: left;
+    }
 }
 @media screen and (max-width:380px){
     .jumbotron{
@@ -978,5 +1035,14 @@ footer ul li a:hover {
     }
     .HargaDomain{
         width: 90%;
+    }
+    .bcabri{
+        height: 200px;
+    }
+    .paypal{
+        height: 150px;
+    }
+    .konfirmresponsiv{
+        width: 100%;
     }
 }

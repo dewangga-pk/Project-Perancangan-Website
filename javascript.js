@@ -16,7 +16,9 @@ function navClick() {
   }
 }
 
-let a1 = document.querySelectorAll(".jumbotron,.container,.testimoni,footer");
+let a1 = document.querySelectorAll(
+  ".jumbotron,.container,.testimoni,footer"
+);
 for (let i =0 ,len = a1.length;i<len;i++){
   a1[i].addEventListener('click',function(){
     closeNav();

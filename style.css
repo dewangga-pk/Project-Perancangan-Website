@@ -353,7 +353,12 @@ footer ul li a:hover {
     margin: 0 auto;
     width: 800px;
     overflow: hidden;
-    background-color: blue;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
 }
 .thumbnail{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -362,9 +367,9 @@ footer ul li a:hover {
     padding: 10px;
     width: 28%;
     margin: 10px;
-    float: left;
-    overflow: hidden;
+    height: 600px;
     background-color: #F3F3F3;
+    position: relative;
 }
 .thumbnail h2{
     color: #616161;
@@ -395,6 +400,8 @@ footer ul li a:hover {
     color: white;
     font-size: 20px;
     bottom: 0;
+    left: 0;
+    position: absolute;
 }
 .hr1{
     background-color: #707070;
@@ -713,12 +720,40 @@ footer ul li a:hover {
         font-size: 12px;
     }
     .content{
-        width: 600px;
+        width: 75%;
     }
     .thumbnail{
-        width: 180px;
+        width: 27%;
     }
+}
 
+@media screen and (max-width:908px){
+    .content{
+        width: 90%;
+    }
+    .benefit{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    .jumbotron{
+        padding-top: 15%;
+        height: 40%;
+    }
+    .navbar{
+        display: none;
+
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    .smallsquad,.smallsquad2{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 100%;
+    }
 }
 @media screen and (max-width:747px) {
     .kotakkecil{
@@ -838,26 +873,37 @@ footer ul li a:hover {
     footer ul li a:hover {
         color: white;
     }
-
-    
-}
-@media screen and (max-width:750px){
-    .jumbotron{
-        padding-top: 15%;
-        height: 40%;
+    .domain{
+        width: 100%;
     }
-    .navbar{
-        display: none;
-
+    .content{
+        width: 100%;
     }
-    .menu {
+    .thumbnail{
+        width: 60%;
+        height: 500px;
+    }
+    .benefit{
+        width: 90%;
+    }
+    .fitur{
         display: block;
-        cursor: pointer;
     }
-    .smallsquad,.smallsquad2{
-        flex-wrap: wrap;
+    .fitur1{
+        text-align: left;
+        width: 80%;
+        color: grey;
     }
-    .box{
+    .fitur1 img{
+        float: left;
+    }
+    .fitur2{
+        margin-top: 0;
+        width: 80%;
+        text-align: left;
+        color: grey;
+    }
+    .pembayaran{
         width: 100%;
     }
 }
@@ -879,5 +925,8 @@ footer ul li a:hover {
     .kotaktestimoni{
         width: 100%;
         height: 110%;
+    }
+    .domain{
+        height: 25%;
     }
 }

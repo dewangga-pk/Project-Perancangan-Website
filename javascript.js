@@ -1,8 +1,6 @@
 function myFunction() {
-    var x = document.getElementById("SideNav");
-    if (x.className == "Sidenavbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "Sidenavbar";
-    }
+    var x = document.getElementById("SideNav").style.height="200px";
+}
+function closeNav() {
+  document.getElementById("SideNav").style.height = "0";
 }

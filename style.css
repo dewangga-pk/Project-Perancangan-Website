@@ -155,6 +155,12 @@ li h4 {
     padding: 1%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
+    text-align: center;
+}
+.kotakjumbo table{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #searchpromo img{
     padding: 0;
@@ -185,14 +191,6 @@ li h4 {
     width: 100%;
     border-bottom: 1px solid grey;
 }
-.kotakjumbo table tr:last-child{
-    text-align: center;
-    border-bottom: none;
-}
-tr td a{
-    color: white;
-    text-decoration: none;
-}
 .harga {
     font-size: 22px;
     text-align: right;
@@ -201,14 +199,13 @@ tr td a{
 .tengah {
     background-color: #2680EB;
     text-align: center;
-    width: 50%;
     margin: 0 auto;
     border-radius: 5px;
-    height: 10%;
     font-size: 150%;
 }
 
 .tengah a {
+    padding: 20%;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -460,8 +457,32 @@ footer ul li a:hover {
 }
 /* SideBAr */
 .Sidenavbar{
-    display: none;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: rgba(13,13,13, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-end;
+    transition: 1s;
+    overflow: hidden;
 }
+.Sidenavbar a{
+    width: 100%;
+    border-top: 1px solid #707070;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.Sidenavbar .closebtn {
+    font-size: 18px;
+    text-align: center;
+  }
 /* Responsiv */
 /* MenuSaatKecil */
 @media screen and(max-width:1600px){
@@ -516,6 +537,9 @@ footer ul li a:hover {
         height: 33px;
         font-size: 16px;
     }
+    .tengah a{
+        padding: 10%;
+    } 
     
     .harga {
         margin-top: 10px;
@@ -611,25 +635,6 @@ footer ul li a:hover {
         display: block;
         cursor: pointer;
     }
-    .Sidenavbar.responsive{
-        height: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: flex-end;
-        transition: 1s;
-    }
-    .Sidenavbar.responsive a{
-        border-top: 1px solid #707070;
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-        color: #2680EB;
-        transition: 1s;
-    }
     .smallsquad,.smallsquad2{
         flex-wrap: wrap;
     }
@@ -639,7 +644,6 @@ footer ul li a:hover {
 }
 @media screen and (max-width:380px){
     .jumbotron{
-        /* padding-top : 15%; */
         height: 40%;
     }
     .container,.container h2{
@@ -657,17 +661,5 @@ footer ul li a:hover {
     .kotaktestimoni{
         width: 100%;
         height: 110%;
-    }
-}
-@media screen and (max-height:736px){
-    .jumbotron{
-        padding-top: 20%;
-        height: 100%;
-    }
-    .kotakjumbo{
-        height: auto;
-    }
-    #searchpromo img{
-        width: 10%;
     }
 }

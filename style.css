@@ -211,7 +211,7 @@ li h4 {
     overflow: hidden;
     text-align: center;
     animation: fadeInBottom 0.5s linear forwards;
-    animation-delay: 5.5s;
+    animation-delay: 4s;
 }
 @keyframes fadeInBottom{
     0%{

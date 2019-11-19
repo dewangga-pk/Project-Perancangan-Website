@@ -908,6 +908,9 @@ footer ul li a:hover {
         padding-top: 15%;
         height: 40%;
     }
+    .kotakjumbo{
+        animation-delay: 3.5s;
+    }
     .navbar{
         display: none;
 

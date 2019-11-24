@@ -9,32 +9,6 @@ body {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-.open .layer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: top;
-    animation: open 1s ease-in-out forwards;
-}
-.open .layer:nth-child(1){
-    z-index: 2;
-    background: #000;
-}
-.open .layer:nth-child(2){
-    z-index: 1;
-    animation-delay: 1s;
-    background: #03a9f4;
-}
-@keyframes open{
-    0%{
-        transform: scaleY(1);
-    }
-    100%{
-        transform: scaleY(0);
-    }
-}
 /* Navbar  */
 
 header {
@@ -66,17 +40,6 @@ header nav {
     height: 49px;
     margin-left: 20px;
     width: 155px;
-    opacity: 0;
-    animation: fadeIn 1s linear forwards;
-    animation-delay: 2s;
-}
-@keyframes fadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 
 nav img {
@@ -103,24 +66,6 @@ nav img {
 
 .navbar li a {
     text-decoration: none;
-}
-.navbar:before{
-    content: '';
-    background: white;
-    position: absolute;
-    width: 58%;
-    height: 9%;
-    transform-origin: right;
-    animation: revealMenu 1s ease-in-out forwards;
-    animation-delay: 3s;
-}
-@keyframes revealMenu{
-    0%{
-        transform: scaleX(1);
-    }
-    100%{
-        transform: scaleX(0);
-    }
 }
 .button1 {
     display: block;
@@ -201,7 +146,6 @@ li h4 {
 }
 
 .kotakjumbo {
-    opacity: 0;
     min-width: 500px;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -210,18 +154,6 @@ li h4 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
     text-align: center;
-    animation: fadeInBottom 0.5s linear forwards;
-    animation-delay: 4s;
-}
-@keyframes fadeInBottom{
-    0%{
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 .kotakjumbo table{
     text-align: left;

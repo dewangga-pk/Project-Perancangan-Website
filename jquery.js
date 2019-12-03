@@ -4,7 +4,7 @@ dropdown.empty();
 dropdown.append('<option selected="true" disabled>Provinsi</option>');
 dropdown.prop('selectedIndex',0);
 
-const url='http://dev.farizdotid.com/api/daerahindonesia/provinsi';
+const url='https://dev.farizdotid.com/api/daerahindonesia/provinsi';
 
 $.getJSON(url,function(data){
     $.each(data.semuaprovinsi,function(key,entry){
@@ -18,7 +18,7 @@ $("#provinsi").on('change', function(e) {
     dropdown2.append('<option selected="true" disabled>Kabupaten</option>');
     dropdown2.prop('selectedIndex',0);
 
-    const url2 = `http://dev.farizdotid.com/api/daerahindonesia/provinsi/${$(this).val()}/kabupaten`
+    const url2 = `https://dev.farizdotid.com/api/daerahindonesia/provinsi/${$(this).val()}/kabupaten`
     
     $.getJSON(url2,function(data){
         $.each(data.kabupatens,function(key,entry){
@@ -34,7 +34,7 @@ $('#kabupaten').on('change',function(e){
     dropdown3.append('<option selected="true" disabled>Kecamatan</option>');
     dropdown3.prop('selectedIndex',0);
 
-    const url3 = `http://dev.farizdotid.com/api/daerahindonesia/provinsi/kabupaten/${$(this).val()}/kecamatan`
+    const url3 = `https://dev.farizdotid.com/api/daerahindonesia/provinsi/kabupaten/${$(this).val()}/kecamatan`
     
     $.getJSON(url3,function(data){
         $.each(data.kecamatans,function(key,entry){

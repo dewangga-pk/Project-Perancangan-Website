@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Signup</title>
+    <title>SignUp</title>
 </head>
 <body>
     <header>
@@ -56,13 +56,14 @@
             <p class="juduldomain">Buat akun Anda dan mulai pengalaman layanan web yang lebih baik</p>
          </div>
          <section class="SignUp">
+
              <form action="">
                  <label for="fname">Nama Depan:</label><br>
                  <input type="text"><br>
                  <label for="lname">Nama Belakang:</label><br>
                  <input type="text"><br>
                  <label for="Institue">Institusi:</label><br>
-                 <input type="radio" name="Institue" value="Perusahaan">Personal <br>
+                 <input type="radio" name="Institue" value="Perusahaan">Personal
                  <input type="radio" name="Institue" value="Personal">Perusahaan <br>
                  <label for="email">Email:</label><br>
                  <input type="email"><br>
@@ -70,7 +71,26 @@
                  <input type="password"><br>
                  <label for="password">Ulangi Password</label><br>
                  <input type="password"><br>
-                 <input type="button" value="Lanjut" onclick="location.href='SignUp2.html';">
+                 <label for="alamat">Alamat:</label><br>
+                 <!-- <label for="country">Negara:</label><br>
+                 <input type="text"><br> -->
+                 <!-- <label for="">Alamat</label><br> -->
+                 <!-- <input type="text"><br> -->
+                 <select id="provinsi" name="provinsi">
+                </select><br>
+                <select id="kabupaten" name="kabupaten">
+                        <option selected="true" disabled>Kabupaten</option>
+                </select><br>
+                <select id="kecamatan" name="kecamatan">
+                        <option selected="true" disabled>Kecamatan</option>
+                </select><br>
+                 <!-- <input type="text"><br> -->
+                 <label for="poscode">Kode Pos</label><br>
+                 <input type="number"><br>
+                 <label for="telp">No. Telp:</label><br>
+                 <input type="tel" name="phone" placeholder="081234567890 [Tidak Lebih dari 13 Angka]" maxlength="13" required><br><br>
+                 <input type="checkbox" id="pengecekan">Saya telah membaca dan menyetujui persyaratan yang ada<br><br>
+                 <input type="button" value="SignUp" id="SignUp2"><br>
              </form>
          </section>
          <footer>
@@ -100,7 +120,9 @@
                     <li><img src="Gambar/twitter.png" alt=""><a href="https://twitter.com">Twitter</a></li>
                     <li><img src="Gambar/instagram.png" alt=""><a href="https://www.instagram.com/?hl=id">Instagram</a></li>
                 </ul>
-         </footer> 
-    <script src="../javascript.js"></script>
+         </footer>
+    <script type="text/javascript" src="../javascript.js"></script>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../jquery.js"></script>
 </body>
 </html>

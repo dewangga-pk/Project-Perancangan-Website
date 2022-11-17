@@ -2,29 +2,40 @@
   <div class="w-56 h-full bg-gray-100 flex flex-col justify-between">
     <div class="text-right space-y-2 px-1">
       <h4 class="text-lg text-center pt-2">
-        <strong>Small</strong>
+        <strong>{{ plan.pname }}</strong>
       </h4>
       <p class="bg-blue-400 text-white text-lg">
-        Rp XXXXX,-/Bulan
+        Rp {{ plan.price }},-/Bulan
       </p>
       <p>
-        XXXXX GB Space
+        {{ plan.space }} Space
       </p>
       <p>
-        <strong>Unlimited</strong> Bandwidth
+        <strong>{{ plan.bandwidth }}</strong> Bandwidth
       </p>
       <p>
-        <strong>Unlimited</strong> Website
+        <template v-if="(plan.website)==='Unlimited'">
+          <strong>Unlimited</strong> Website
+        </template>
+        <template v-else>
+          {{ plan.website }} Website
+        </template>
       </p>
       <p>
-        <strong>Unlimited</strong> Email
+        <strong>{{ plan.email }}</strong> Email
       </p>
-      <p>
-        Gratis Domain
-      </p>
-      <p>
-        Akses SSH
-      </p>
+      <template v-if="plan.domain">
+        <p>
+          Gratis Domain
+        </p>
+      </template>
+      <br v-else>
+      <template v-if="plan.ssh">
+        <p>
+          Akses SSH
+        </p>
+      </template>
+      <br v-else>
     </div>
     <button class="w-full p-2 bg-blue-500 text-white hover:bg-white hover:text-black hover:border hover:border-blue-500">
       Pesan
@@ -34,6 +45,12 @@
 
 <script>
 export default {
-  name: 'HostingCard'
+  name: 'HostingCard',
+  props: {
+    plan: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
